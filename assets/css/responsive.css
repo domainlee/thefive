@@ -1,62 +1,6 @@
-
-@media only screen and (min-width:320px) and (max-width:576px) {
-    .border-sm-none {
-        border: none;
-    }
-
+@media (min-width:1200px) {
     .head__sologan {
-        font-size: 38px;
-    }
-    .feature .row > div:nth-child(2) .feature__title {
-        font-size: 36px;
-    }
-    .feature .row > div:nth-child(2) .feature__content {
-        padding: 30px;
-    }
-
-    .heading-default {
-        margin: 0 0 20px;
-    }
-
-    .area-post-five__inner .row .col-lg-2 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-@media only screen and (min-width:576px) and (max-width:768px) {
-
-    .heading-default {
-        margin: 0 0 20px;
-    }
-
-    .border-md-none {
-        border: none;
-    }
-    .head__sologan {
-        font-size: 52px;
-    }
-    .feature .row > div:nth-child(2) .feature__title {
-        font-size: 42px;
-    }
-    .feature .row > div:nth-child(2) .feature__content {
-        padding: 40px;
-    }
-
-
-    .area-post-five__inner .row .col-lg-2 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:992px) {
-    .head__sologan {
-        font-size: 72px;
-    }
-
-    .heading-default {
-        margin: 0 0 20px;
+        font-size: 92px;
     }
 }
 
@@ -66,6 +10,15 @@
     }
 
     /** Start Header **/
+
+    .head__sologan {
+        font-size: 72px;
+    }
+
+    .heading-default {
+        margin: 0 0 20px;
+    }
+
     .head {
         z-index: 100;
         position: fixed;
@@ -277,10 +230,33 @@
     .toggle-search:hover {
         color: #000;
     }
+
+
+    .heading-default {
+        margin: 0 0 20px;
+    }
+
+    .border-md-none {
+        border: none;
+    }
+    .head__sologan {
+        font-size: 52px;
+    }
+    .feature .row > div:nth-child(2) .feature__title {
+        font-size: 42px;
+    }
+    .feature .row > div:nth-child(2) .feature__content {
+        padding: 40px;
+    }
+
 }
 
-@media (min-width:1200px) {
+@media (max-width:576px) {
     .head__sologan {
-        font-size: 92px;
+        font-size: 38px;
+    }
+
+    .border-sm-none {
+        border: none;
     }
 }
