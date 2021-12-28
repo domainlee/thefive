@@ -297,8 +297,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     opacity: 1;
     visibility: visible;
 }
-.head__nav .nav__desktop > ul > li > ul > li {
+.head__nav .nav__desktop > ul > li > ul > li, .head__nav .nav__desktop > ul > li > ul > li > ul > li {
     list-style: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .head__nav .nav__desktop > ul > li > ul > li > a {
     color: #000;
@@ -309,6 +313,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .head__nav .nav__desktop > ul > li > ul > li:hover > ul {
     opacity: 1;
     visibility: visible;
+}
+.head__nav .nav__desktop > ul > li > ul > li:hover, .head__nav .nav__desktop > ul > li > ul > li > ul > li:hover {
+    background-color: #f1f1f1;
+}
+.head__nav .nav__desktop > ul > li > ul > li:hover a, .head__nav .nav__desktop > ul > li > ul > li > ul > li:hover a {
+    text-decoration: none;
 }
 .head__nav .nav__desktop > ul > li > ul > li > ul  {
     opacity: 0;
