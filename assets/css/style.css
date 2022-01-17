@@ -377,33 +377,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
 }
-/*** Area Feature Two ***/
-.area-feature-two__title {
+/*** Area Feature Second ***/
+.area-feature-second__title {
     font-size: 3rem;
 }
-.area-feature-two__item {
+.area-feature-second__item {
     margin: 0 0 15px;
     padding: 0 0 15px;
     border-bottom: 1px solid #DDD;
 }
-.area-feature-two__item:last-child {
+.area-feature-second__item:last-child {
     margin: 0;
     padding: 0;
     border-bottom: none;
 }
-/*** Area Feature Three ***/
-.area-feature-three__title {
-    font-size: 3.3em;
+/*** Area Feature Third ***/
+.area-feature-third__title {
+    font-size: 18px;
 }
-.area-feature-three__item {
-    padding: 0 0 10px;
-    margin: 0 0 10px;
-    border-bottom: 1px solid #DDD;
+.area-feature-third .col-md-6 .area-feature-third__title {
+    font-size: 48px;
 }
-.area-feature-three__item:last-child {
-    border-bottom: none;
-}
-.area-feature-three__button-more {
+.area-feature-third__button-more {
     font-size: 14px;
     font-weight: 700;
 }
