@@ -422,7 +422,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border: none;
 }
 
-/** Block Post Type Four **/
 .entry {
     margin: 10px 0;
     display: inline-flex;
@@ -465,6 +464,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 400;
     letter-spacing: 5px;
     font-size: 12px;
+}
+
+.area-search__heading {
+    border-bottom: 1px solid;
+    margin: 0 -1.5rem 20px;
 }
 
 /**** Start Block Post Eight ****/
