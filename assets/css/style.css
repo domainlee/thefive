@@ -813,9 +813,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-.entry {
-    margin: 0 0 10px;
-}
 .three-post-grid__headline {
     margin: 20px 0;
     font-size: 20px;
