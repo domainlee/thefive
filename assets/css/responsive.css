@@ -4,19 +4,23 @@
     }
 }
 
+@media (max-width: 992px) {
+    .heading-default {
+        margin: 0 -1rem 20px;
+    }
+}
 @media (max-width: 768px) {
     body {
         padding: 60px 0 0;
     }
 
     /** Start Header **/
-
     .head__sologan {
         font-size: 72px;
     }
 
     .heading-default {
-        margin: 0 0 20px;
+        margin: 0 -1rem 20px;
     }
 
     .head {
