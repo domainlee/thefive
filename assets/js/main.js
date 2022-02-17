@@ -107,28 +107,9 @@
 
     var sidebarScroll = function()
     {
-        var tmpWindow = $(window),
-            wrapper = $('.main').height(),
-            header = $('.head').height(),
-            sidebar = $('.sidebar');
-
-        if (sidebar.length > 0) {
-            var offsetTop = sidebar.offset().top,
-                offsetBottom;
-
-            tmpWindow.scroll(function(){
-
-                offsetBottom = (wrapper + header) - sidebar.height();
-
-                if (tmpWindow.scrollTop() < offsetTop) {
-                    sidebar.removeClass('fixed bottom');
-                } else if (tmpWindow.scrollTop() > offsetBottom) {
-                    sidebar.removeClass('fixed').addClass('bottom');
-                } else {
-                    sidebar.removeClass('bottom').addClass('fixed');
-                }
-            });
-        }
+        $('.sidebar-fixed').theiaStickySidebar({
+            additionalMarginTop: 20
+        });
     }
 
     $(document).ready(function() {
@@ -137,6 +118,6 @@
         owlCarousel();
         // masonry();
         search();
-        // sidebarScroll();
+        sidebarScroll();
     });
 }());
