@@ -35,12 +35,6 @@
             }
 
         });
-
-        // $('.nav__mobile > ul').append('<a class="button__close"></a>');
-        //
-        // $('.button__close').click(function () {
-        //     $('body').removeClass('nav-open-js');
-        // });
     }
 
     var lazy = function () {
@@ -88,7 +82,6 @@
                     items: 2
                 }
             },
-
         });
     };
 
