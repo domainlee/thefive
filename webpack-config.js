@@ -17,14 +17,13 @@ const config = {
         JS_DIR + '/resize-sensor.min.js',
         JS_DIR + '/jquery.lazy.min.js',
         JS_DIR + '/main.js',
-        NODE_MODULES + '/bootstrap/scss/bootstrap.scss',
         CSS_DIR + '/main.scss',
+        NODE_MODULES + '/font-awesome/scss/font-awesome.scss',
     ],
     output : {
         filename : 'main.bundle.js',
         chunkFilename: 'main.bundle.js',
         path : BUILD_DIR + '/js/',
-        // publicPath : BUILD_DIR
     },
     module: {
         rules: [
