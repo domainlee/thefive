@@ -1,12 +1,27 @@
-@media (min-width:1200px) {
+@media (max-width:1400px) {
     .head__sologan {
         font-size: 92px;
     }
 }
 
+@media (max-width:1200px) {
+    .head__sologan {
+        font-size: 82px;
+    }
+}
+
 @media (max-width: 992px) {
+    .head__sologan {
+        font-size: 74px;
+    }
     .heading-default {
         margin: 0 -1rem 20px;
+    }
+    .area-feature .row>div:nth-child(2) .area-feature__content {
+        padding: 30px;
+    }
+    .area-feature .row>div:nth-child(2) .area-feature__title {
+        font-size: 42px;
     }
 }
 @media (max-width: 768px) {
@@ -40,13 +55,13 @@
         align-items: center;
         cursor: pointer;
     }
-    .fa-navicon {
+    .fa-navicon__custom {
         position: relative;
         height: 20px;
         display: flex;
         align-items: center;
     }
-    .fa-navicon i {
+    .fa-navicon__custom i {
         height: 2px;
         width: 20px;
         display: block;
@@ -56,7 +71,7 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
-    .fa-navicon:before {
+    .fa-navicon__custom:before {
         content: '';
         width: 20px;
         height: 2px;
@@ -69,7 +84,7 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
-    .fa-navicon:after {
+    .fa-navicon__custom:after {
         content: '';
         width: 20px;
         height: 2px;
@@ -82,7 +97,7 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
-    .nav-open-js .fa-navicon:after {
+    .nav-open-js .fa-navicon__custom:after {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
@@ -90,7 +105,7 @@
         transform: rotate(-45deg);
         bottom: 9px;
     }
-    .nav-open-js .fa-navicon:before {
+    .nav-open-js .fa-navicon__custom:before {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -98,7 +113,7 @@
         transform: rotate(45deg);
         top: 9px;
     }
-    .nav-open-js .fa-navicon i {
+    .nav-open-js .fa-navicon__custom i {
         opacity: 0;
     }
     .nav-open-js .nav__mobile {
@@ -253,6 +268,10 @@
         padding: 40px;
     }
 
+    .area-feature .row>div:nth-child(2) .area-feature__title {
+        font-size: 36px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -260,7 +279,19 @@
         font-size: 38px;
     }
 
+    .head__sologan.head__sologan--footer {
+        font-size: 34px;
+    }
+
     .border-sm-none {
         border: none;
+    }
+
+    .heading-default__title {
+        font-size: 28px;
+    }
+
+    .area-feature .row>div:nth-child(2) .area-feature__title {
+        font-size: 32px;
     }
 }
