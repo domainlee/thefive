@@ -33,77 +33,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
-
-    <link href="assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/owl.carousel.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/owl.theme.default.css" media="screen" rel="stylesheet" type="text/css">
-
-    <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
-
-
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.lazy.min.js"></script>
-    <script src="assets/js/masonry.pkgd.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!--- start style --->
+    <link href="assets/build/css/main.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!--- end style --->
 
 </head>
 <body class="page-full">
-    <!---- Start Section Head ---->
-    <section class="head">
+
+    <!--Start Block Head-->
+    <header class="head">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-3 col-sm-12">
-                    <div class="head__datetime">
-                        <h2 class="head__date--the">Monday</h2>
-                        <div class="head__date--day">
-                            <span>09-03-2020</span><span>Vol <strong>19</strong></span>
-                        </div>
+                <div class="col-md-3 mb-md-0 mb-3 d-none d-md-block">
+                    <div class="head__social text-center text-md-start m-auto m-md-0">
+                        <label class="head__social--title">Social</label>
+                        <ul class="head__social--list justify-content-center justify-content-md-start">
+                            <li class="li-facebook"> <a href="#" target="_blank" rel="alternate" title="Facebook"> <i class="fa fa-facebook-f"></i></a></li>
+                            <li class="li-twitter"> <a href="#" target="_blank" rel="alternate" title="Twitter"> <i class="fa fa-twitter"></i></a></li>
+                            <li class="li-instagram"> <a href="#" target="_blank" rel="alternate" title="Instagram"> <i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                        <p class="head__social--description">
+                            Follow us on some social networks above
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-12">
-                    <h1 class="head__sologan">Minimal Blog/Magazine </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="head__line">
-                        <a href="#">www.mysite.com</a>
-                    </div>
-                    <div class="head__nav">
-                        <div class="head__left">
-                            <div class="head__search">
-                                <a class="head__button-search"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <form action="#" class="search-form" method="get" role="search">
-                                    <label>
-                                        <input type="search" name="s" value="" placeholder="Search …" class="search-field">
-                                    </label>
-                                    <input type="submit" value="Search" class="search-submit">
-                                </form>
-                            </div>
-                            <ul class="head__social">
-                                <li class="li-facebook"> <a href="#" target="_blank" rel="alternate" title="Facebook"> <i class="fa fa-facebook"></i></a></li>
-                                <li class="li-twitter"> <a href="#" target="_blank" rel="alternate" title="Twitter"> <i class="fa fa-twitter"></i></a></li>
-                                <li class="li-instagram"> <a href="#" target="_blank" rel="alternate" title="Instagram"> <i class="fa fa-instagram"></i></a></li>
-                                <li class="li-pinterest"> <a href="#" target="_blank" rel="alternate" title="Pinterest"> <i class="fa fa-pinterest"></i></a></li>
-                                <li class="li-youtube"> <a href="#" target="_blank" rel="alternate" title="YouTube"> <i class="fa fa-youtube"></i></a></li>
-                                <li class="li-whatsapp"> <a href="#" target="_blank" rel="alternate" title="WhatsApp"> <i class="fa fa-whatsapp"></i></a></li>
-                            </ul>
-                        </div>
-
+                <div class="col-2 d-flex d-md-none">
+                    <a class="toggle-menu">
+                        <span class="fa-navicon__custom"><i></i></span>
+                    </a>
+                    <!--Start navigation mobile-->
+                    <div class="nav__mobile">
                         <ul>
                             <li class="menu-item-has-children">
-                                <a href="index_1.html">Home</a>
+                                <a href="index.html">Home</a>
                                 <ul>
-                                    <li><a href="index_1.html">Home 1</a></li>
-                                    <li><a href="index_2.html">Home 2</a></li>
-                                    <li><a href="index_3.html">Home 3</a></li>
-                                    <li><a href="index_4.html">Home 4</a></li>
-                                    <li><a href="index_5.html">Home 5</a></li>
-                                    <li><a href="index_6.html">Home 6</a></li>
+                                    <li><a href="index.html">Home 1</a></li>
+                                    <li><a href="index-2.html">Home 2</a></li>
+                                    <li><a href="index-3.html">Home 3</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -125,12 +91,8 @@
                                         <a href="#">Category</a>
                                         <ul>
                                             <li><a href="category.html">Default</a></li>
-                                            <li><a href="category-list-left.html">Sidebar right</a></li>
-                                            <li><a href="category-grid.html">Grid</a></li>
-                                            <li><a href="category-grid-two.html">Grid 2 Cols</a></li>
                                             <li><a href="category-masonry.html">Masonry</a></li>
                                             <li><a href="category-masonry-two.html">Masonry 2 Cols</a></li>
-                                            <li><a href="category-full.html">Full</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -153,19 +115,80 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
 
-                        <!--- Start navigation mobile -->
-                        <a class="nav__mobile--button">Menu</a>
-                        <div class="nav__mobile">
+                        <!--Start social mobile-->
+                        <div class="head__social text-center text-md-left m-auto m-md-0">
+                            <label class="head__social--title">Social</label>
+                            <ul class="head__social--list justify-content-center justify-content-md-start">
+                                <li class="li-facebook"> <a href="#" target="_blank" rel="alternate" title="Facebook"> <i class="fa fa-facebook-f"></i></a></li>
+                                <li class="li-twitter"> <a href="#" target="_blank" rel="alternate" title="Twitter"> <i class="fa fa-twitter"></i></a></li>
+                                <li class="li-instagram"> <a href="#" target="_blank" rel="alternate" title="Instagram"> <i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <p class="head__social--description">
+                                Follow us on some social networks above
+                            </p>
+                        </div>
+                        <!--End social mobile-->
+
+                    </div>
+                    <!--End navigation mobile-->
+                </div>
+                <div class="col-8 col-md-6">
+                    <div class="head__logo">
+                        <a href="#">
+                            <h1 class="head__sologan">The Five</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2 d-flex d-md-none justify-content-end search-mobile">
+                    <a class="toggle-search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <!--Start form search mobile-->
+                    <div class="head__search--mobile">
+                        <form action="#" class="search-form" method="get" role="search">
+                            <label>
+                                <input type="search" name="s" value="" placeholder="Search …" class="search-field">
+                            </label>
+                            <input type="submit" value="Search" class="search-submit">
+                        </form>
+                    </div>
+                    <!--End form search mobile-->
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="head__datetime text-center text-md-end mb-md-0 mb-3">
+                        <h2 class="head__date--the">Monday</h2>
+                        <div class="head__date--day">
+                            <span>09-03-2020</span><span>Vol <strong>19</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row d-none d-md-block">
+                <div class="col-md-12">
+                    <div class="head__nav">
+                        <!--Start Search Form-->
+                        <div class="head__left">
+                            <div class="head__search">
+                                <a class="head__button-search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                <form action="#" class="search-form" method="get" role="search">
+                                    <label>
+                                        <input type="search" name="s" value="" placeholder="Search …" class="search-field">
+                                    </label>
+                                    <input type="submit" value="Search" class="search-submit">
+                                </form>
+                            </div>
+                        </div>
+                        <!--Start Search Form-->
+
+                        <!--Start navigation desktop-->
+                        <div class="nav__desktop">
                             <ul>
                                 <li class="menu-item-has-children">
                                     <a href="index_1.html">Home</a>
                                     <ul>
-                                        <li><a href="index_1.html">Home 1</a></li>
-                                        <li><a href="index_2.html">Home 2</a></li>
-                                        <li><a href="index_3.html">Home 3</a></li>
-                                        <li><a href="index_4.html">Home 4</a></li>
-                                        <li><a href="index_5.html">Home 5</a></li>
-                                        <li><a href="index_6.html">Home 6</a></li>
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 2</a></li>
+                                        <li><a href="index-3.html">Home 3</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
@@ -187,12 +210,8 @@
                                             <a href="#">Category</a>
                                             <ul>
                                                 <li><a href="category.html">Default</a></li>
-                                                <li><a href="category-list-left.html">Sidebar right</a></li>
-                                                <li><a href="category-grid.html">Grid</a></li>
-                                                <li><a href="category-grid-two.html">Grid 2 Cols</a></li>
                                                 <li><a href="category-masonry.html">Masonry</a></li>
                                                 <li><a href="category-masonry-two.html">Masonry 2 Cols</a></li>
-                                                <li><a href="category-full.html">Full</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -215,14 +234,17 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
-                        <!--- End navigation mobile -->
+                        <!--Start navigation desktop-->
+
+
 
                     </div>
+
                 </div>
             </div>
         </div>
-    </section>
-    <!---- End Section Head ---->
+    </header>
+    <!--End Block Head-->
 
     <!---- Start Section Main ---->
     <section class="main">
@@ -681,5 +703,10 @@
             </div>
         </div>
     </section>
+
+    <!--- start script bundle --->
+    <script src="assets/build/js/main.bundle.js"></script>
+    <!--- end script bundle --->
+
 </body>
 </html>
