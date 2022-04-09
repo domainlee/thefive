@@ -28,48 +28,32 @@ body {
     color: #fff;
 }
 .ratio169 {
+    aspect-ratio: 16 / 9;
     margin: 0;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.ratio169:before {
-    content: '';
-    padding-top: 56.25%;
-    display: block;
 }
 .ratio32 {
+    aspect-ratio: 3 / 2;
     margin: 0;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.ratio32:before {
-    content: '';
-    padding-top: 66.66%;
-    display: block;
 }
 .ratio43 {
+    aspect-ratio: 4 / 3;
     margin: 0;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.ratio43:before {
-    content: '';
-    padding-top: 75%;
-    display: block;
 }
 .ratio11 {
+    aspect-ratio: 1 / 1;
     margin: 0;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.ratio11:before {
-    content: '';
-    padding-top: 100%;
-    display: block;
 }
 a {
     color: #000;
@@ -873,6 +857,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .editor-content img {
     max-width: 100%;
+    display: block;
+}
+.editor-content figure {
+    display: flex;
+    flex-direction: column;
+}
+.editor-content figure figcaption {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    border-bottom: 1px solid;
+}
+.editor-content figure.aligncenter {
+    justify-content: center;
+    align-items: center;
+}
+.editor-content figure.alignleft {
+    justify-content: start;
+    align-items: flex-start;
+}
+.editor-content figure.alignright {
+    justify-content: end;
+    align-items: flex-end;
+}
+// Single full post
+.single-full .single-post {
+    margin: 0 auto;
+    max-width: 800px;
 }
 .editor-content a {
     color: #111;
@@ -987,51 +1000,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .single-post__gallery {
     margin: 0 0 20px;
-}
-.single-post__gallery--image {
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.single-post__gallery--image:before {
-    content: '';
-    padding-top: 56.25%;
-    display: block;
-}
-.single-post__gallery .owl-nav {
-    position: initial;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.single-post__gallery .owl-nav > button {
-    padding: 0 50px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    border: none;
-    font-size: 30px;
-    color: #FFF;
-}
-.single-post__gallery .owl-nav > button:focus {
-    outline: none;
-}
-.single-post__gallery .owl-prev {
-    left: 0;
-    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
-}
-.single-post__gallery .owl-next {
-    right: 0;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+100&0+0,0.65+100 */
-    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
 }
 .post_meta {
     display: inline-flex;
@@ -1454,4 +1422,26 @@ blockquote:before {
     position: absolute;
     width: 262.5px;
     bottom: 0;
+}
+
+/** Overwrite OWL **/
+.owl-carousel .owl-item .owl-lazy {
+    max-height: initial !important;
+}
+.owl-nav button {
+    position: absolute;
+    top: 42%;
+    width: 30px;
+    height: 30px;
+    background-color: #000 !important;
+    color: #FFF !important;
+    border-radius: 0 !important;
+    border: 1px solid #ffffffc9 !important;
+    box-shadow: 0 0 0 2px #000;
+}
+.owl-nav button.owl-prev {
+    left: 15px;
+}
+.owl-nav button.owl-next {
+    right: 15px;
 }
