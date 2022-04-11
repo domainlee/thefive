@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 /*** Area Feature Second ***/
 .area-feature-second__title {
-    font-size: 3rem;
+    font-size: 48px;
 }
 .area-feature-second__item {
     margin: 0 0 15px;
@@ -772,10 +772,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .about-page__headline {
     font-size: 48px;
 }
-.about-page__content.single-post__content--two {
-    margin: 30px auto;
-    max-width: 750px;
-}
 .about-page__content img {
     max-width: 100%;
 }
@@ -863,8 +859,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display: flex;
     flex-direction: column;
 }
+.editor-content figure img {
+    max-width: 100%;
+}
 .editor-content figure figcaption {
-    margin: 10px 0 0;
+    margin: 6px 0 0;
     font-size: 13px;
     color: #666;
     font-style: italic;
