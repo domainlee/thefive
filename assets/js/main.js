@@ -1,5 +1,11 @@
 ;(function () {
     'use strict';
+    var loading = function () {
+        $(window).on("load", function () {
+            $('.loading').delay(666).fadeOut('slow');
+            $('body').delay(666);
+        });
+    }
 
     var nav = function () {
         var button_nav = $('.toggle-menu');
@@ -45,24 +51,6 @@
     };
 
     var owlCarousel = function() {
-
-        // Home page slider //
-        $('.home-three-feature__js').owlCarousel({
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            items: 1,
-            margin: 0,
-            stagePadding: 0,
-            smartSpeed: 350,
-            slideSpeed: 350,
-            loop: true,
-            autoplay:true,
-            lazyLoad: true,
-            dots: false,
-            nav: true,
-            navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-        });
-
         // SINGLE PAGE - Gallery //
         $('.single-post__gallery--js').owlCarousel({
             loop: true,
@@ -83,25 +71,25 @@
         });
     };
 
-    var search = function () {
+    var searchDesktop = function () {
         $('.head__button-search').click(function(){
             $('body').toggleClass('search-js-open');
         });
     };
 
-    var sidebarScroll = function()
-    {
+    var sidebarScroll = function() {
         $('.sidebar-fixed').theiaStickySidebar({
             additionalMarginTop: 20
         });
     }
 
     $(document).ready(function() {
+        loading();
         nav();
         lazy();
         owlCarousel();
         // masonry();
-        search();
+        searchDesktop();
         sidebarScroll();
     });
 }());

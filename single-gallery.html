@@ -40,12 +40,22 @@
 </head>
 <body>
 
+    <!-- start loading-->
+    <div class="loading">
+        <div class="loading__inner">
+            <div class="loading__list">
+                <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+            </div>
+        </div>
+    </div>
+    <!-- end loading-->
+
     <!--Start Block Head-->
     <header class="head">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 mb-md-0 mb-3 d-none d-md-block">
-                    <div class="head__social text-center text-md-left m-auto m-md-0">
+                    <div class="head__social text-center text-md-start m-auto m-md-0">
                         <label class="head__social--title">Social</label>
                         <ul class="head__social--list justify-content-center justify-content-md-start">
                             <li class="li-facebook"> <a href="#" target="_blank" rel="alternate" title="Facebook"> <i class="fa fa-facebook-f"></i></a></li>
@@ -59,10 +69,11 @@
                 </div>
                 <div class="col-2 d-flex d-md-none">
                     <a class="toggle-menu">
-                        <span class="fa-navicon"><i></i></span>
+                        <span class="fa-navicon__custom"><i></i></span>
                     </a>
                     <!--Start navigation mobile-->
                     <div class="nav__mobile">
+                        <!-- start menu for mobile -->
                         <ul>
                             <li class="menu-item-has-children">
                                 <a href="index.html">Home</a>
@@ -91,8 +102,9 @@
                                         <a href="#">Category</a>
                                         <ul>
                                             <li><a href="category.html">Default</a></li>
-                                            <li><a href="category-masonry.html">Masonry</a></li>
-                                            <li><a href="category-masonry-two.html">Masonry 2 Cols</a></li>
+                                            <li><a href="category-grid.html">Grid</a></li>
+                                            <li><a href="category-grid-sidebar.html">Grid Sidebar</a></li>
+                                            <li><a href="category-list-sidebar.html">List Sidebar</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -110,10 +122,11 @@
                             </li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="category.html">News</a></li>
-                            <li><a href="category-masonry.html">Travel</a></li>
-                            <li><a href="category-grid.html">Entertainment</a></li>
+                            <li><a href="category-grid.html">Travel</a></li>
+                            <li><a href="category-list-sidebar.html">Entertainment</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
+                        <!-- end menu for mobile -->
 
                         <!--Start social mobile-->
                         <div class="head__social text-center text-md-left m-auto m-md-0">
@@ -155,7 +168,7 @@
                     <!--End form search mobile-->
                 </div>
                 <div class="col-md-3 d-none d-md-block">
-                    <div class="head__datetime text-center text-md-right mb-md-0 mb-3">
+                    <div class="head__datetime text-center text-md-end mb-md-0 mb-3">
                         <h2 class="head__date--the">Monday</h2>
                         <div class="head__date--day">
                             <span>09-03-2020</span><span>Vol <strong>19</strong></span>
@@ -184,7 +197,7 @@
                         <div class="nav__desktop">
                             <ul>
                                 <li class="menu-item-has-children">
-                                    <a href="index_1.html">Home</a>
+                                    <a href="index.html">Home</a>
                                     <ul>
                                         <li><a href="index.html">Home 1</a></li>
                                         <li><a href="index-2.html">Home 2</a></li>
@@ -210,8 +223,9 @@
                                             <a href="#">Category</a>
                                             <ul>
                                                 <li><a href="category.html">Default</a></li>
-                                                <li><a href="category-masonry.html">Masonry</a></li>
-                                                <li><a href="category-masonry-two.html">Masonry 2 Cols</a></li>
+                                                <li><a href="category-grid.html">Grid</a></li>
+                                                <li><a href="category-grid-sidebar.html">Grid Sidebar</a></li>
+                                                <li><a href="category-list-sidebar.html">List Sidebar</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -229,8 +243,8 @@
                                 </li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="category.html">News</a></li>
-                                <li><a href="category-masonry.html">Travel</a></li>
-                                <li><a href="category-grid.html">Entertainment</a></li>
+                                <li><a href="category-grid.html">Travel</a></li>
+                                <li><a href="category-list-sidebar.html">Entertainment</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
