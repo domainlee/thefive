@@ -17,7 +17,10 @@
 
 @media (max-width: 992px) {
     .head__sologan {
-        font-size: 74px;
+        height: 70px;
+    }
+    .head__sologan img {
+        height: 70px;
     }
     .heading-default {
         margin: 0 -1rem 20px;
@@ -232,6 +235,13 @@
         opacity: 1;
         visibility: visible;
     }
+    .head__sologan {
+        margin: 16px 0;
+        height: 45px;
+    }
+    .head__sologan img {
+        height: 45px;
+    }
     .head__search--mobile {
         position: fixed;
         top: 77px;
@@ -286,9 +296,6 @@
     .border-md-none {
         border: none;
     }
-    .head__sologan {
-        font-size: 52px;
-    }
     .feature .row > div:nth-child(2) .feature__title {
         font-size: 42px;
     }
@@ -338,7 +345,11 @@
         padding: 60px 0 0;
     }
     .head__sologan {
-        font-size: 38px;
+        margin: 10px 0;
+        height: 40px;
+    }
+    .head__sologan img {
+        height: 40px;
     }
     .head__search--mobile {
         top: 60px;

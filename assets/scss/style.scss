@@ -162,16 +162,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .head__logo a:hover {
     text-decoration: none;
 }
+
 .head__sologan {
-    margin: 5px 0 10px;
-    text-align: center;
-    color: #111;
-    font-size: 92px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 20px 0;
     position: relative;
-    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+}
+.head__sologan img {
+    height: 85px;
 }
 .head__left {
     display: flex;
