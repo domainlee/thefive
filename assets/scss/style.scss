@@ -1,9 +1,9 @@
 /*
 Theme Name: The Five
-Author: domainlee.niit@gmailcom
+Author: domainlee
 Support: domainlee.niit@gmail.com
-Description: Creative minimal template
-Version: 1.0
+Description: Blog & Magazine Minimal
+Version: 1.0.0
 */
 
 /* CSS Index
@@ -30,7 +30,6 @@ Version: 1.0
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
 
 body {
     font-family: 'Merriweather', serif;
@@ -626,6 +625,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .head__sologan.head__sologan--footer {
     font-size: 54px;
     color: #FFF;
+}
+.head__sologan.head__sologan--footer img {
+    height: 70px;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
 }
 .footer__inner {
     background-color: #111;
